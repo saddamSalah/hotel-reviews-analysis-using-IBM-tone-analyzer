@@ -5,7 +5,7 @@
 - open http://127.0.0.1:8000/indexer it will take some time then you get the result from the elastic search query
 - Each hotel is indexed in only one document that ibncludes the original data from the dataset and the data the returned from the IBM watson tone analyzer.
 -Notes
-  - We procress only 3 reviews for each hotel to prove the concept using the free quote of IBM watson tone analyzer
+  - We process only 3 reviews for each hotel to prove the concept using the free quote of IBM watson tone analyzer
   - To edit the the tone analyzer microservice to apply the process for all of the reviews of each hotel you need to:
       - edit IAMAuthenticator in tone_analyzer.py to use your access token
       - edit analyze_reviews method in the same script to let the for loop to loop over the (len(reviews))
